@@ -1,5 +1,10 @@
+import lib "lib";
+import call "canister:call";
+
 actor {
-  public query func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
+  type T = actor {
+    f(x: lib.X): async ();
   };
+
+  let z: T = call;
 };

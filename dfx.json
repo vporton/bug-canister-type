@@ -2,6 +2,11 @@
   "canisters": {
     "mytest_backend": {
       "main": "src/mytest_backend/main.mo",
+      "type": "motoko",
+      "dependencies": ["call"]
+    },
+    "call": {
+      "main": "src/mytest_backend/call.mo",
       "type": "motoko"
     }
   },
